@@ -1,0 +1,6 @@
+C:\Users\Sidali\source\repos\DVLDD_Data\bin\Debug\DVLD_Data.dll
+C:\Users\Sidali\source\repos\DVLDD_Data\bin\Debug\DVLD_Data.pdb
+C:\Users\Sidali\source\repos\DVLDD_Data\obj\Debug\DVLDD_Data.csproj.AssemblyReference.cache
+C:\Users\Sidali\source\repos\DVLDD_Data\obj\Debug\DVLDD_Data.csproj.CoreCompileInputs.cache
+C:\Users\Sidali\source\repos\DVLDD_Data\obj\Debug\DVLD_Data.dll
+C:\Users\Sidali\source\repos\DVLDD_Data\obj\Debug\DVLD_Data.pdb
