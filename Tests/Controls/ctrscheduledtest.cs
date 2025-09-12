@@ -109,7 +109,7 @@ namespace DVLD_project
 
             label11.Text = _LocalDrivingLicenseApplication.AppID.ToString();
             label12.Text = _LocalDrivingLicenseApplication.licenseclass.ClassName;
-            label13.Text = _LocalDrivingLicenseApplication.person.FullName();
+            label13.Text = _LocalDrivingLicenseApplication.PersonFullName;
 
 
             //this will show the trials for this test before 

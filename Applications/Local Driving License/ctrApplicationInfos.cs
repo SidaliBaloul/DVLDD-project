@@ -69,7 +69,7 @@ namespace DVLD_project
             label6.Text = _LocalDrivingLicenseApplication.AppID.ToString();
             label4.Text = clsLicenceClasses.Find(_LocalDrivingLicenseApplication.LicenseClassID).ClassName;
             label5.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().ToString();
-            ctrApplicationBasicInfos1._LoadApplicationInfos(_LocalDrivingLicenseApplication.AppID);
+            ctrApplicationBasicInfos1._LoadApplicationInfos(_LocalDrivingLicenseApplication.applicationID);
         }
 
         public void LoadInfosByLocalApplicationID(int lclappid)

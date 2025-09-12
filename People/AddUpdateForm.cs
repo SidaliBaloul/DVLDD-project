@@ -279,7 +279,7 @@ namespace DVLD_project
 
         private void textBoxEmail_Validating(object sender, CancelEventArgs e)
         {
-            if (textBoxEmail.Text == "")
+            if (textBoxEmail.Text.Trim() == "")
                 return;
 
             if (!clsValidation.ValidateEmail(textBoxEmail.Text))
@@ -319,6 +319,7 @@ namespace DVLD_project
                string filepath = openFileDialog1.FileName;
                 pictureBox1.Load(filepath);
                 linkLabelRemove.Visible = true;
+               
             }
         }
 
@@ -332,6 +333,71 @@ namespace DVLD_project
                 pictureBox1.Image = Resources.woman;
 
             linkLabelRemove.Visible = false;
+        }
+
+        private void textBoxAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxPhone_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxPhone.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBoxPhone, "This Field Is Required !");
+                return;
+            }
+            else
+                errorProvider1.SetError(textBoxPhone, null);
+        }
+
+        private void textBoxAddress_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxAddress.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBoxAddress, "This Field Is Required !");
+                return;
+            }
+            else
+                errorProvider1.SetError(textBoxAddress, null);
+        }
+
+        private void textBoxLastName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxLastName.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBoxLastName, "This Field Is Required !");
+                return;
+            }
+            else
+                errorProvider1.SetError(textBoxLastName, null);
+        }
+
+        private void textBoxSecondName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxSecondName.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBoxSecondName, "This Field Is Required !");
+                return;
+            }
+            else
+                errorProvider1.SetError(textBoxSecondName, null);
+        }
+
+        private void textBoxFirstName_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxFirstName.Text))
+            {
+                e.Cancel = true;
+                errorProvider1.SetError(textBoxFirstName, "This Field Is Required !");
+                return;
+            }
+            else
+                errorProvider1.SetError(textBoxFirstName, null);
         }
     }
 }

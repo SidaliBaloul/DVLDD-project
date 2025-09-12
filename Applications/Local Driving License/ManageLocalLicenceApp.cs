@@ -225,7 +225,7 @@ namespace DVLD_project
 
         private void scheduleStreetTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VisionTest frm = new VisionTest((int)dataGridView1.CurrentRow.Cells[0].Value, clsTestTypes.eTestType.WriteTest);
+            VisionTest frm = new VisionTest((int)dataGridView1.CurrentRow.Cells[0].Value, clsTestTypes.eTestType.StreetTest);
             frm.ShowDialog();
             ManageLocalLicenceApp_Load(null, null);
         }
@@ -238,7 +238,7 @@ namespace DVLD_project
 
         private void scheduToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VisionTest frm = new VisionTest((int)dataGridView1.CurrentRow.Cells[0].Value, clsTestTypes.eTestType.StreetTest);
+            VisionTest frm = new VisionTest((int)dataGridView1.CurrentRow.Cells[0].Value, clsTestTypes.eTestType.WriteTest);
             frm.ShowDialog();
             ManageLocalLicenceApp_Load(null, null);
         }
@@ -323,7 +323,10 @@ namespace DVLD_project
         {
             if(MessageBox.Show("Are You Sure You Want To Delete This Application","Confirm",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (clsLocalDrivingLicenceApp.DeleteLocalDrivingApplication((int)dataGridView1.CurrentRow.Cells[0].Value))
+                int AppID = (int)dataGridView1.CurrentRow.Cells[0].Value;
+                clsLocalDrivingLicenceApp  ldlapp3 = clsLocalDrivingLicenceApp.FindLocalAppID(AppID);
+
+                if (ldlapp3.DeleteLocalDrivingApplication())
                 {
                     MessageBox.Show("Application Deleted Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     ManageLocalLicenceApp_Load(null, null);

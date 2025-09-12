@@ -117,7 +117,7 @@ namespace DVLD_project
 
         private void ctrPersoninfoWithzfilter1_Load(object sender, EventArgs e)
         {
-            _LoadData();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -130,9 +130,9 @@ namespace DVLD_project
                 return;
             }
 
-            if (ctrPersoninfoWithzfilter1.PersonID != -1)
+            if (ctrPersoninfoWithzfilter1.PersonID != -1 || ctrPersoninfoWithzfilter1.PersonID != 0)
             {
-                if (clsUser.IsPersonIDAlreadyAttached(user1.PersonID))
+                if (clsUser.IsPersonIDAlreadyAttached(ctrPersoninfoWithzfilter1.PersonID))
                 {
                     MessageBox.Show("This Person Is Already Attached To A User", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -186,6 +186,7 @@ namespace DVLD_project
                 return;
             }
 
+            user1.PersonID = ctrPersoninfoWithzfilter1.PersonID;
             user1.UserName = textBox1.Text;
             user1.Password = textBox2.Text;
             user1.isActive = (checkBox1.Checked);
@@ -197,6 +198,7 @@ namespace DVLD_project
                 label1.Text = "Update User";
 
                 MessageBox.Show("Data Saved Succefully");
+                button2.Enabled = false;
             }
             else
                 MessageBox.Show("ERROR !");

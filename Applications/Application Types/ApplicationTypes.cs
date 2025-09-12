@@ -14,7 +14,7 @@ namespace DVLD_project
     public partial class ApplicationTypes : Form
     {
         DataTable dt = clsApplicationTypes.GetApplicationTypesList();
-
+        //piiwwww
         public ApplicationTypes()
         {
             InitializeComponent();

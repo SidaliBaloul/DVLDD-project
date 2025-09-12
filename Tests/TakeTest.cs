@@ -44,7 +44,7 @@ namespace DVLD_project
 
             ctrscheduledtest1.LoadInfo(_AppointmentID);
 
-            if (ctrscheduledtest1.TestAppointmentID == -1)
+            if (ctrscheduledtest1.TestAppointmentID == -1 || ctrscheduledtest1.TestAppointmentID == 0)
                 button2Save.Enabled = false;
             else
                 button2Save.Enabled = true;
@@ -65,6 +65,7 @@ namespace DVLD_project
                 //lblUserMessage.Visible = true;
                 radioButton2.Enabled = false;
                 radioButton1.Enabled = false;
+                button2Save.Enabled = false;
             }
 
             else

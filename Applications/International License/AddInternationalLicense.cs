@@ -42,7 +42,7 @@ namespace DVLD_project
             InternationalLicense.Fees = clsApplicationTypes.Find((int)clsApplications.enApplicationType.NewInternationalLicense).AppFees;
             InternationalLicense.UserID = clsGlobal.CurrentUser.UserID;
 
-
+            InternationalLicense.IsActive = true;
             InternationalLicense.DriverID = ctrLicenceInfos1.SelectedLicenseInfo.DriverID;
             InternationalLicense.LclLicenseID = ctrLicenceInfos1.SelectedLicenseInfo.LicenseID;
             InternationalLicense.IssueDate = DateTime.Now;
@@ -57,7 +57,7 @@ namespace DVLD_project
                 return;
             }
 
-            label21.Text = InternationalLicense.AppID.ToString();
+            label21.Text = InternationalLicense.AppliID.ToString();
             _InternationalLicenseID = InternationalLicense.LicenseID;
             label12.Text = InternationalLicense.LicenseID.ToString();
             MessageBox.Show("International License Issued Successfully with ID=" + InternationalLicense.LicenseID.ToString(), "License Issued", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -90,7 +90,7 @@ namespace DVLD_project
 
         private void ctrLicenceInfos1_OnLicenseselected(int obj)
         {
-
+            linkLabel2.Enabled=false;
             int SelectedLicenseID = obj;
 
             label13.Text = SelectedLicenseID.ToString();

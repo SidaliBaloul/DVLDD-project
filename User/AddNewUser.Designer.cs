@@ -90,8 +90,10 @@
             // 
             // ctrPersoninfoWithzfilter1
             // 
+            this.ctrPersoninfoWithzfilter1.filterenabled = false;
             this.ctrPersoninfoWithzfilter1.Location = new System.Drawing.Point(19, 3);
             this.ctrPersoninfoWithzfilter1.Name = "ctrPersoninfoWithzfilter1";
+            this.ctrPersoninfoWithzfilter1.showaddperson = true;
             this.ctrPersoninfoWithzfilter1.Size = new System.Drawing.Size(872, 508);
             this.ctrPersoninfoWithzfilter1.TabIndex = 0;
             this.ctrPersoninfoWithzfilter1.OnPersonselected += new System.Action<int>(this.ctrPersoninfoWithzfilter1_OnPersonselected);

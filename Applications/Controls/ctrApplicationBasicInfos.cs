@@ -54,8 +54,8 @@ namespace DVLD_project
 
         private void _FillApplicationInfos()
         {
-            _ApplicationID = application.AppID;
-            label15.Text = application.AppID.ToString();
+            _ApplicationID = application.AppliID;
+            label15.Text = application.AppliID.ToString();
             label16.Text = application.StatusText.ToString();
             label17.Text = application.Fees.ToString();
             label18.Text = application.ApplicationType.AppName.ToString();

@@ -33,8 +33,9 @@ namespace DVLD_project
 
         private void ScheduleVisionTest_Load(object sender, EventArgs e)
         {
-            ctrScheduletest1.TestTypeID = _TestTypeID;
-            ctrScheduletest1.LoadData(_LocalDrivingLicenseApplicationID, _AppointmentID);
+            ctrSchedultTesst1.TestTypeID = _TestTypeID;
+            ctrSchedultTesst1.LoadData(_LocalDrivingLicenseApplicationID, _AppointmentID);
+            
         }
 
         private void ctrScheduletest1_Load(object sender, EventArgs e)
@@ -45,6 +46,11 @@ namespace DVLD_project
         private void button1Close_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ctrScheduletest1_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

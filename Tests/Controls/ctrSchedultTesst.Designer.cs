@@ -1,6 +1,6 @@
 ﻿namespace DVLD_project
 {
-    partial class ctrScheduletest
+    partial class ctrSchedultTesst
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,6 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button2Save = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label19 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -43,19 +51,100 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button2Save = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button2Save
+            // 
+            this.button2Save.BackColor = System.Drawing.Color.Lime;
+            this.button2Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2Save.Font = new System.Drawing.Font("Rockwell Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2Save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2Save.Location = new System.Drawing.Point(350, 631);
+            this.button2Save.Name = "button2Save";
+            this.button2Save.Size = new System.Drawing.Size(118, 45);
+            this.button2Save.TabIndex = 25;
+            this.button2Save.Text = "Save";
+            this.button2Save.UseVisualStyleBackColor = false;
+            this.button2Save.Click += new System.EventHandler(this.button2Save_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Location = new System.Drawing.Point(3, 490);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(820, 135);
+            this.groupBox2.TabIndex = 24;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Retake Test Infos";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(212, 93);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(59, 20);
+            this.label18.TabIndex = 19;
+            this.label18.Text = "?????";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(641, 40);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(19, 20);
+            this.label17.TabIndex = 20;
+            this.label17.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(221, 40);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(19, 20);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "0";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(46, 93);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(138, 20);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "R. Test App ID :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(514, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 20);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Total Fees :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(75, 40);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 20);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "R. App Fees :";
             // 
             // groupBox1
             // 
@@ -77,10 +166,9 @@
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(820, 481);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label19
             // 
@@ -192,6 +280,7 @@
             this.label12.Size = new System.Drawing.Size(54, 20);
             this.label12.TabIndex = 10;
             this.label12.Text = "?????";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label2
             // 
@@ -211,96 +300,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Name :";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Location = new System.Drawing.Point(3, 490);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(820, 135);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Retake Test Infos";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(212, 93);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(59, 20);
-            this.label18.TabIndex = 19;
-            this.label18.Text = "?????";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(641, 40);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(19, 20);
-            this.label17.TabIndex = 20;
-            this.label17.Text = "0";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(221, 40);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(19, 20);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "0";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(46, 93);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(138, 20);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "R. Test App ID :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(514, 40);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(104, 20);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Total Fees :";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(75, 40);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(119, 20);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "R. App Fees :";
-            // 
-            // button2Save
-            // 
-            this.button2Save.BackColor = System.Drawing.Color.Lime;
-            this.button2Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2Save.Font = new System.Drawing.Font("Rockwell Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2Save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2Save.Location = new System.Drawing.Point(350, 631);
-            this.button2Save.Name = "button2Save";
-            this.button2Save.Size = new System.Drawing.Size(118, 35);
-            this.button2Save.TabIndex = 22;
-            this.button2Save.Text = "Save";
-            this.button2Save.UseVisualStyleBackColor = false;
-            this.button2Save.Click += new System.EventHandler(this.button2Save_Click_2);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DVLD_project.Properties.Resources.vision;
@@ -311,20 +310,20 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // ctrScheduletest
+            // ctrSchedultTesst
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button2Save);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "ctrScheduletest";
-            this.Size = new System.Drawing.Size(826, 673);
-            this.Load += new System.EventHandler(this.ctrScheduletest_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Name = "ctrSchedultTesst";
+            this.Size = new System.Drawing.Size(844, 679);
+            this.Load += new System.EventHandler(this.ctrSchedultTesst_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -332,7 +331,17 @@
 
         #endregion
 
+        private System.Windows.Forms.Button button2Save;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label16;
@@ -346,15 +355,5 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button2Save;
     }
 }

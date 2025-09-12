@@ -130,7 +130,6 @@
             // linkLabelRemove
             // 
             this.linkLabelRemove.AutoSize = true;
-            this.linkLabelRemove.Enabled = false;
             this.linkLabelRemove.Location = new System.Drawing.Point(978, 601);
             this.linkLabelRemove.Name = "linkLabelRemove";
             this.linkLabelRemove.Size = new System.Drawing.Size(68, 20);
@@ -173,6 +172,7 @@
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(196, 26);
             this.textBoxPhone.TabIndex = 52;
+            this.textBoxPhone.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxPhone_Validating);
             // 
             // label12
             // 
@@ -235,6 +235,8 @@
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(672, 126);
             this.textBoxAddress.TabIndex = 46;
+            this.textBoxAddress.TextChanged += new System.EventHandler(this.textBoxAddress_TextChanged);
+            this.textBoxAddress.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxAddress_Validating);
             // 
             // textBoxEmail
             // 
@@ -299,6 +301,7 @@
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(196, 26);
             this.textBoxLastName.TabIndex = 39;
+            this.textBoxLastName.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxLastName_Validating);
             // 
             // textBoxThirdName
             // 
@@ -313,6 +316,7 @@
             this.textBoxSecondName.Name = "textBoxSecondName";
             this.textBoxSecondName.Size = new System.Drawing.Size(196, 26);
             this.textBoxSecondName.TabIndex = 37;
+            this.textBoxSecondName.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxSecondName_Validating);
             // 
             // textBoxFirstName
             // 
@@ -320,6 +324,7 @@
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(196, 26);
             this.textBoxFirstName.TabIndex = 36;
+            this.textBoxFirstName.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxFirstName_Validating);
             // 
             // label6
             // 

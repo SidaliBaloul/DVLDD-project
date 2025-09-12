@@ -141,9 +141,9 @@ namespace DVLD_project
         {
             int TestAppointmentID = (int)dataGridView1.CurrentRow.Cells[0].Value;
 
-            //TakeTest frm = new TakeTest(TestAppointmentID, _TestType);
-            //frm.ShowDialog();
-            //VisionTest_Load(null, null);
+            TakeTest frm = new TakeTest(TestAppointmentID, _TestType);
+            frm.ShowDialog();
+            VisionTest_Load(null, null);
         }
         private void frm_DataBack(object sender, int testpassed)
         {

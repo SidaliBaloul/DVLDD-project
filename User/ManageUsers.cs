@@ -121,11 +121,13 @@ namespace DVLD_project
                 return;
             }
 
-            if (FilterColumn != "FullName" && FilterColumn != "UserName")
-                //in this case we deal with numbers not string.
-                dt.DefaultView.RowFilter = string.Format("[{0}] = {1}", FilterColumn, textBox1.Text.Trim());
-            else
-                dt.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterColumn, textBox1.Text.Trim());
+           
+                if (FilterColumn != "FullName" && FilterColumn != "UserName")
+                    //in this case we deal with numbers not string.
+                    dt.DefaultView.RowFilter = string.Format("[{0}] = {1}", FilterColumn, textBox1.Text.Trim());
+                else
+                    dt.DefaultView.RowFilter = string.Format("[{0}] LIKE '{1}%'", FilterColumn, textBox1.Text.Trim());
+            
 
             label2.Text = dataGridView1.Rows.Count.ToString();
         }

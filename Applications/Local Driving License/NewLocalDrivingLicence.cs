@@ -180,6 +180,7 @@ namespace DVLD_project
                 //change form mode to update.
                 mode = eMode.Update;
                 label1.Text = "Update Local Driving License Application";
+                button2.Enabled = false;
 
                 MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace DVLD_project
 {
-    public partial class ctrScheduletest : UserControl
+    public partial class ctrSchedultTesst : UserControl
     {
 
         private enum eModes { Vision = 1, Write = 2, Street = 3 }
@@ -29,6 +29,16 @@ namespace DVLD_project
 
         int _AppointmentID;
         int ldlapp;
+
+        public ctrSchedultTesst()
+        {
+            InitializeComponent();
+        }
+
+        private void ctrSchedultTesst_Load(object sender, EventArgs e)
+        {
+
+        }
 
         public clsTestTypes.eTestType TestTypeID
         {
@@ -91,7 +101,7 @@ namespace DVLD_project
 
             dateTimePicker1.Value = appointment1.AppointmentDate;
 
-            if (appointment1.RetakeTestAppID == -1)
+            if (appointment1.RetakeTestAppID == -1 || appointment1.RetakeTestAppID == 0)
             {
                 label15.Text = "0";
                 label18.Text = "N/A";
@@ -147,7 +157,7 @@ namespace DVLD_project
 
             label11.Text = ldlapp.ToString();
             label12.Text = ldlapp1.licenseclass.ClassName;
-            label13.Text = ldlapp1.person.FullName();
+            label13.Text = ldlapp1.PersonFullName;
             label6.Text = ldlapp1.TotalTrialsPerTest(_TestTypeID).ToString();
 
             if (type == eType.Add)
@@ -268,15 +278,6 @@ namespace DVLD_project
 
         }
 
-        private void ScheduleVisionTest_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ctrScheduletest1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private bool _HandleRetakeApplication()
         {
@@ -288,6 +289,7 @@ namespace DVLD_project
                 //then we linke it with the appointment.
 
                 //First Create Applicaiton 
+                
                 clsApplications Application = new clsApplications();
 
                 Application.PersonID = ldlapp1.PersonID;
@@ -311,47 +313,31 @@ namespace DVLD_project
             return true;
         }
 
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void button2Save_Click(object sender, EventArgs e)
         {
+            if (!_HandleRetakeApplication())
+                return;
 
-        }
+            appointment1.TestTypeid = _TestTypeID;
+            appointment1.LDappID = ldlapp1.AppID;
+            appointment1.AppointmentDate = dateTimePicker1.Value;
+            appointment1.TestFees = Convert.ToSingle(label16.Text);
+            appointment1.UserID = clsGlobal.CurrentUser.UserID;
 
-        private void button1Close_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void ctrScheduletest_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-      
-
-        private void button2Save_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2Save_Click_2(object sender, EventArgs e)
-        {
-
+            if (appointment1.Save())
+            {
+                type = eType.Update;
+                MessageBox.Show("Data Saved Successfully.", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                button2Save.Enabled = false;
+                return;
+            }
+            else
+                MessageBox.Show("Error: Data Is not Saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
