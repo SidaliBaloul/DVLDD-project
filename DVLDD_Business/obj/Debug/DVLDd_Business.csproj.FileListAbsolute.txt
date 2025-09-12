@@ -1,0 +1,9 @@
+C:\Users\Sidali\source\repos\DVLDD_Business\obj\Debug\DVLDD_Business.csproj.AssemblyReference.cache
+C:\Users\Sidali\source\repos\DVLDD_Business\obj\Debug\DVLDD_Business.csproj.CoreCompileInputs.cache
+C:\Users\Sidali\source\repos\DVLDD_Business\bin\Debug\DVLD_Business.dll
+C:\Users\Sidali\source\repos\DVLDD_Business\bin\Debug\DVLD_Business.pdb
+C:\Users\Sidali\source\repos\DVLDD_Business\bin\Debug\DVLD_Data.dll
+C:\Users\Sidali\source\repos\DVLDD_Business\bin\Debug\DVLD_Data.pdb
+C:\Users\Sidali\source\repos\DVLDD_Business\obj\Debug\DVLDD_Bu.6D1FF9F3.Up2Date
+C:\Users\Sidali\source\repos\DVLDD_Business\obj\Debug\DVLD_Business.dll
+C:\Users\Sidali\source\repos\DVLDD_Business\obj\Debug\DVLD_Business.pdb
