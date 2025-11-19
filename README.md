@@ -8,6 +8,8 @@ the project is DVLD (Driving and Vehicle Licensing Departement )
 
 📘 Overview
 
+The DVLD project uses ADO.NET within the Data Access Layer (DAL) to handle all communication with the SQL Server database. This includes executing queries, managing connections, and performing CRUD operations in a structured and efficient way.
+
 The DVLD (Driver & Vehicle Licensing Department) project is a structured C# application designed to simulate or manage DVLD-related operations such as:
 
 Managing driver records
@@ -83,3 +85,4 @@ Framework	.NET Framework
 UI	Windows Forms
 Database	SQL Server
 Architecture	Three-Tier (UI → BL → DAL)
+DataAccess ADO.net 
